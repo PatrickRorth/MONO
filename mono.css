@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mono-font: Verdana, sans-serif;
+    --mono-font-color: #999;
+    --mono-font-size: 100%;
+    --mono-line-height: 1.5;
+    --mono-font-weight: 400;
+    --mono-space: 1rem;
+    --mono-typography-space-vertical: 1rem;
+    --mono-border-radius: .75rem;
+    --mono-border-width: .063rem;
+    --mono-background-standard: #F9F9F9;
+    --mono-shadow-color: rgba(0, 0, 0, 0.3);
+    --mono-h1-color: #2d3138;
+    --mono-h2-color: #373c44;
+    --mono-h3-color: #424751;
+    --mono-h4-color: #4d535e;
+    --mono-h5-color: #5c6370;
+    --mono-h6-color: #646b79;
+}
+
+@media (min-width: 576px) {
+    :root {
+        --mono-font-size:106.25%
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --mono-font-size:112.5%
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --mono-font-size:118.75%
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --mono-font-size:125%
+    }
+}
+
+@media (min-width: 1536px) {
+    :root {
+        --mono-font-size:131.25%
+    }
+}
+
+body {
+    background-color: var(--mono-background-standard);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: var(--mono-typography-space-vertical);
+    color: var(--mono-font-color);
+    font-size: var(--mono-font-size);
+    line-height: var(--mono-line-height);
+    font-family: var(--mono-font);
+    --mono-font-weight: 700;
+}
+
+h1 {
+    --mono-font-size: 2rem;
+    --mono-line-height: 1.125;
+    --mono-typography-spacing-top: 3rem;
+    color: var(--mono-h1-color);
+}
+
+h2 {
+    --mono-font-size: 1.75rem;
+    --mono-line-height: 1.15;
+    --mono-typography-spacing-top: 2.625rem;
+    color: var(--mono-h2-color);
+}
+
+h3 {
+    --mono-font-size: 1.5rem;
+    --mono-line-height: 1.175;
+    --mono-typography-spacing-top: 2.25rem;
+    color: var(--mono-h3-color);
+}
+
+h4 {
+    --mono-font-size: 1.25rem;
+    --mono-line-height: 1.2;
+    --mono-typography-spacing-top: 1.874rem;
+    color: var(--mono-h4-color);
+}
+
+h5 {
+    --mono-font-size: 1.125rem;
+    --mono-line-height: 1.225;
+    --mono-typography-spacing-top: 1.6875rem;
+    color: var(--mono-h5-color);
+}
+
+h6 {
+    --mono-font-size: 1rem;
+    --mono-line-height: 1.25;
+    --mono-typography-spacing-top: 1.5rem;
+    color: var(--mono-h6-color);
+}
+
+p {
+    font-family: var(--mono-font);
+    padding: 1rem;
+}
+
+.hero {
+    max-width: 950px;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px var(--mono-shadow-color), -3px -3px 0 #ffffff;
+}
